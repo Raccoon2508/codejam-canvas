@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-
+  font-family: Arial, sans-serif;
+  color:#757575;
+  font-weight:500;
 }
 
 
@@ -23,16 +25,19 @@
   border: 1px solid lightgrey;
 }
 
+.header-menu p{
+  margin-top:15px;
+}
 
 
 
 .header-menu__menu-button{
-  outline:1px solid red;
-  width:40px;
-  height:40px;
+  outline:3px solid #757575;
+  width:30px;
+  height:30px;
   position:absolute;
-  top:0;
-  left:8px;
+  top:10px;
+  left:15px;
 }
 
 .header-menu__menu-button:hover{
@@ -55,8 +60,9 @@ canvas {
   width: 100%;
   height: 100%;
   background-color: lightgrey;
-  outline:1px solid red;
+  border: 1px solid lightgrey;
   image-rendering: pixelated;
+  box-shadow: 0 4px 4px black;
 
 }
 
@@ -80,7 +86,38 @@ canvas {
 
 }
 
+.instrument-panel li::before{
+ content:"";
+  position:absolute;
 
+ width:24px;
+ height:24px;
+ left:20px;
+ top:10px;
+
+}
+
+
+.instrument-panel li:nth-child(1)::before{
+  background:url('assets/images/icon-share\ \(2\).png')
+
+}
+
+.instrument-panel li:nth-child(2)::before{
+  background:url('assets/images/icon-upload.png')
+
+}
+
+
+.instrument-panel li:nth-child(3)::before{
+  background:url('assets/images/icon-copy.png')
+
+}
+
+.instrument-panel li:nth-child(4)::before{
+  background:url('assets/images/icon-share.png')
+
+}
 
 
 .menu li:hover {
