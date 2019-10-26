@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Canvas tutorial</title>
+	<link href="styles.css" rel="stylesheet">
+    
+    <style type="text/css">
+      canvas {
+        border: 1px solid lightgrey;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="wraper">
+    <header>
+    <nav class="header-menu">
+      <div class="header-menu__menu-button">
+      </div>
+      <p>CodeJam - Pallete</p>
+    </nav>
+    </header>
+    
+
+      <ul class="menu instrument-panel">
+        <li>Paint bucket</li>
+        <li>Choose color</li>
+        <li>Move</li>
+        <li>Transform</li>
+      </ul>
+
+      <ul class="menu color-panel">
+        <li>Current color</li>
+        <li>Prev color</li>
+        <li>red</li>
+        <li>blue</li>
+      </ul>
+
+      <ul class="menu image-size-panel">
+        <li class="size1" >4x4</li>
+        <li class="size2" >32x32</li>
+        <li class="size3" >256x256</li>
+      </ul>
+
+
+
+      <div class="canvas-frame">
+        <canvas id="main-frame" width="512px" height="512px"></canvas>
+      </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+
+</html>
